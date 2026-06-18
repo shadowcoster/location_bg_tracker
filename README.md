@@ -1,3 +1,44 @@
+# Location Tracker
+
+React Native map tracking with live GPS, route history, and a development-only
+joystick. An Express/MongoDB API is included under `server/`.
+
+## Configuration
+
+1. Copy `.env.example` to `.env` and set `MONGODB_URI`.
+2. Start MongoDB and run `npm run server`.
+3. Run `bundle exec pod install` in `ios/` after installing native packages.
+4. Start the app with `npm run android` or `npm run ios`.
+
+Development builds use `http://10.0.2.2:3000` on the Android emulator and
+`http://localhost:3000` on the iOS simulator. The public Mapbox runtime token
+is configured in `src/config/mapbox.ts`. Replace
+`LOCATION_API_BASE_URL` in `src/services/locationApi.ts` with your HTTPS API
+URL for release builds and physical devices.
+
+The joystick UI is compiled only into development behavior through `__DEV__`.
+The API separately rejects `source: "joystick"` in production unless
+`ENABLE_MOCK_LOCATION=true`.
+
+Live GPS uses native background tracking:
+
+- Android runs a foreground location service with a persistent notification
+  and a Stop action. It continues when the app is swiped away.
+- iOS uses Always location authorization, background location mode, significant
+  location changes, the system background-location indicator, and a local
+  tracking notification. iOS does not provide Android-style non-dismissible
+  ongoing notifications, so users can dismiss the notification while the
+  system location indicator remains authoritative. iOS may relaunch after
+  system termination for a significant location change, but Apple does not
+  allow tracking after the user explicitly force-quits the app.
+- Android also cannot continue after the user chooses Force stop in system
+  settings; this is an operating-system security boundary.
+
+The demo screen uses `demo-user` as its user ID. Replace it with the signed-in
+user ID when authentication is connected.
+
+---
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
