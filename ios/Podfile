@@ -17,6 +17,10 @@ end
 target 'LocationTracker' do
   config = use_native_modules!
 
+  pre_install do |installer|
+    $RNMapboxMaps.pre_install(installer)
+  end
+
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
@@ -24,6 +28,7 @@ target 'LocationTracker' do
   )
 
   post_install do |installer|
+    $RNMapboxMaps.post_install(installer)
     react_native_post_install(
       installer,
       config[:reactNativePath],
