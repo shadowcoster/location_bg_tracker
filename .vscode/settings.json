@@ -1,0 +1,10 @@
+{
+  "editor.inlineSuggest.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "javascript": false,
+    "typescript": false,
+    "javascriptreact": false,
+    "typescriptreact": false
+  }
+}
