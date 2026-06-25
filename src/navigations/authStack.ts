@@ -4,6 +4,8 @@ import { Login } from '../screens';
 
 const RootStack = createNativeStackNavigator({
 initialRouteName: 'Login',
+  screenOptions: {headerShown:false
+  },
   screens: {
     Login: Login ,
   },
