@@ -1,13 +1,15 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
-import LocationTrackingScreen from './src/screens/LocationTrackingScreen';
+import { StatusBar } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { Navigation } from './src/navigations/authStack';
 
 function App() {
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle="dark-content" backgroundColor="#f8fafc" />
-      <LocationTrackingScreen />
+      <SafeAreaView style={{ flex: 1,backgroundColor:"#252525" }}>
+        <StatusBar  animated backgroundColor={"white"} barStyle='default'  />
+        <Navigation />
+      </SafeAreaView>
     </SafeAreaProvider>
   );
 }
