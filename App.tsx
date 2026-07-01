@@ -6,8 +6,8 @@ import { Navigation } from './src/navigations/authStack';
 function App() {
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1 }}>
-        <StatusBar barStyle="dark-content" backgroundColor="#f8fafc" />
+      <SafeAreaView style={{ flex: 1,backgroundColor:"#252525" }}>
+        <StatusBar  animated backgroundColor={"white"} barStyle='default'  />
         <Navigation />
       </SafeAreaView>
     </SafeAreaProvider>

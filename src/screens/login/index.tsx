@@ -1,12 +1,20 @@
-import { Text, View, } from 'react-native'
+import { View, } from 'react-native'
 import React from 'react'
 import { styles } from './styles'
+import GlobalHeader from '../../components/enzymes/header'
 
 const Login :React.FC = () => {
-   
+   const headerData = 
+    {
+      name: 'SpiderX',
+      value: 'SpiderX',
+      onPress: () => {
+      
+      },
+    };
   return (
     <View style={styles.v1}>
-      <Text>Login</Text>
+    <GlobalHeader key={1} data={headerData} />
     </View>
   )
 }
