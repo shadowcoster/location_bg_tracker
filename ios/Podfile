@@ -17,6 +17,11 @@ end
 target 'LocationTracker' do
   config = use_native_modules!
 
+  pod 'FirebaseAppCheckInterop', :modular_headers => true
+  pod 'FirebaseAuthInterop', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  pod 'RecaptchaInterop', :modular_headers => true
+
   pre_install do |installer|
     $RNMapboxMaps.pre_install(installer)
   end
@@ -35,5 +40,16 @@ target 'LocationTracker' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |build_config|
+        build_config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+
+        if target.name == 'RNFBAuth'
+          build_config.build_settings['HEADER_SEARCH_PATHS'] ||= ['$(inherited)']
+          build_config.build_settings['HEADER_SEARCH_PATHS'] << '"$(PODS_CONFIGURATION_BUILD_DIR)/FirebaseAuth/Swift Compatibility Header"'
+        end
+      end
+    end
   end
 end
