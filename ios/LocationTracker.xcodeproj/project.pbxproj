@@ -10,6 +10,25 @@
 		0C80B921A6F3F58F76C31292 /* libPods-LocationTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-LocationTracker.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		5A8E7B012F10100100112233 /* BackgroundLocationBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B022F10100100112233 /* BackgroundLocationBridge.m */; };
+		5A8E7B102F10100100112233 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B302F10100100112233 /* APIError.swift */; };
+		5A8E7B112F10100100112233 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B312F10100100112233 /* APIEndpoint.swift */; };
+		5A8E7B122F10100100112233 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B322F10100100112233 /* APIClient.swift */; };
+		5A8E7B132F10100100112233 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B332F10100100112233 /* AppEnvironment.swift */; };
+		5A8E7B502F10100100112233 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B532F10100100112233 /* EmptyResponse.swift */; };
+		5A8E7B142F10100100112233 /* TopViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B342F10100100112233 /* TopViewControllerProvider.swift */; };
+		5A8E7B152F10100100112233 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B352F10100100112233 /* AppColors.swift */; };
+		5A8E7B162F10100100112233 /* AppSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B362F10100100112233 /* AppSpacing.swift */; };
+		5A8E7B172F10100100112233 /* AppTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B372F10100100112233 /* AppTypography.swift */; };
+		5A8E7B182F10100100112233 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B382F10100100112233 /* PrimaryButtonStyle.swift */; };
+		5A8E7B192F10100100112233 /* NativeGoogleProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B392F10100100112233 /* NativeGoogleProfile.swift */; };
+		5A8E7B512F10100100112233 /* PlaceholderPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B542F10100100112233 /* PlaceholderPost.swift */; };
+		5A8E7B522F10100100112233 /* PlaceholderPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B552F10100100112233 /* PlaceholderPostRequest.swift */; };
+		5A8E7B1A2F10100100112233 /* NativeGoogleEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B3A2F10100100112233 /* NativeGoogleEndpoint.swift */; };
+		5A8E7B1B2F10100100112233 /* NativeGoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B3B2F10100100112233 /* NativeGoogleService.swift */; };
+		5A8E7B1C2F10100100112233 /* NativeGoogleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B3C2F10100100112233 /* NativeGoogleViewModel.swift */; };
+		5A8E7B1D2F10100100112233 /* NativeGoogleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B3D2F10100100112233 /* NativeGoogleView.swift */; };
+		5A8E7B1E2F10100100112233 /* NativeGoogleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B3E2F10100100112233 /* NativeGoogleCoordinator.swift */; };
+		5A8E7B1F2F10100100112233 /* NativeGoogleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E7B3F2F10100100112233 /* NativeGoogleScreen.swift */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		CE261CC82D6D4392C01FCED9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
@@ -24,6 +43,25 @@
 		3B4392A12AC88292D35C810B /* Pods-LocationTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationTracker.debug.xcconfig"; path = "Target Support Files/Pods-LocationTracker/Pods-LocationTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-LocationTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationTracker.release.xcconfig"; path = "Target Support Files/Pods-LocationTracker/Pods-LocationTracker.release.xcconfig"; sourceTree = "<group>"; };
 		5A8E7B022F10100100112233 /* BackgroundLocationBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BackgroundLocationBridge.m; path = LocationTracker/BackgroundLocationBridge.m; sourceTree = "<group>"; };
+		5A8E7B302F10100100112233 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = LocationTracker/Core/API/APIError.swift; sourceTree = "<group>"; };
+		5A8E7B312F10100100112233 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIEndpoint.swift; path = LocationTracker/Core/API/APIEndpoint.swift; sourceTree = "<group>"; };
+		5A8E7B322F10100100112233 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = LocationTracker/Core/API/APIClient.swift; sourceTree = "<group>"; };
+		5A8E7B332F10100100112233 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppEnvironment.swift; path = LocationTracker/Core/API/AppEnvironment.swift; sourceTree = "<group>"; };
+		5A8E7B532F10100100112233 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmptyResponse.swift; path = LocationTracker/Core/API/EmptyResponse.swift; sourceTree = "<group>"; };
+		5A8E7B342F10100100112233 /* TopViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopViewControllerProvider.swift; path = LocationTracker/Core/Presentation/TopViewControllerProvider.swift; sourceTree = "<group>"; };
+		5A8E7B352F10100100112233 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppColors.swift; path = LocationTracker/DesignSystem/AppColors.swift; sourceTree = "<group>"; };
+		5A8E7B362F10100100112233 /* AppSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSpacing.swift; path = LocationTracker/DesignSystem/AppSpacing.swift; sourceTree = "<group>"; };
+		5A8E7B372F10100100112233 /* AppTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppTypography.swift; path = LocationTracker/DesignSystem/AppTypography.swift; sourceTree = "<group>"; };
+		5A8E7B382F10100100112233 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PrimaryButtonStyle.swift; path = LocationTracker/DesignSystem/PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		5A8E7B392F10100100112233 /* NativeGoogleProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeGoogleProfile.swift; path = LocationTracker/Features/NativeGoogle/Models/NativeGoogleProfile.swift; sourceTree = "<group>"; };
+		5A8E7B542F10100100112233 /* PlaceholderPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaceholderPost.swift; path = LocationTracker/Features/NativeGoogle/Models/PlaceholderPost.swift; sourceTree = "<group>"; };
+		5A8E7B552F10100100112233 /* PlaceholderPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaceholderPostRequest.swift; path = LocationTracker/Features/NativeGoogle/Models/PlaceholderPostRequest.swift; sourceTree = "<group>"; };
+		5A8E7B3A2F10100100112233 /* NativeGoogleEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeGoogleEndpoint.swift; path = LocationTracker/Features/NativeGoogle/Services/NativeGoogleEndpoint.swift; sourceTree = "<group>"; };
+		5A8E7B3B2F10100100112233 /* NativeGoogleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeGoogleService.swift; path = LocationTracker/Features/NativeGoogle/Services/NativeGoogleService.swift; sourceTree = "<group>"; };
+		5A8E7B3C2F10100100112233 /* NativeGoogleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeGoogleViewModel.swift; path = LocationTracker/Features/NativeGoogle/ViewModels/NativeGoogleViewModel.swift; sourceTree = "<group>"; };
+		5A8E7B3D2F10100100112233 /* NativeGoogleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeGoogleView.swift; path = LocationTracker/Features/NativeGoogle/Views/NativeGoogleView.swift; sourceTree = "<group>"; };
+		5A8E7B3E2F10100100112233 /* NativeGoogleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeGoogleCoordinator.swift; path = LocationTracker/Features/NativeGoogle/Coordinator/NativeGoogleCoordinator.swift; sourceTree = "<group>"; };
+		5A8E7B3F2F10100100112233 /* NativeGoogleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeGoogleScreen.swift; path = LocationTracker/Bridge/NativeGoogleScreen.swift; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-LocationTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocationTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = LocationTracker/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LocationTracker/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,12 +87,127 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				5A8E7B022F10100100112233 /* BackgroundLocationBridge.m */,
+				5A8E7B402F10100100112233 /* Core */,
+				5A8E7B412F10100100112233 /* DesignSystem */,
+				5A8E7B422F10100100112233 /* Features */,
+				5A8E7B432F10100100112233 /* Bridge */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				CEC76FE62FED6E240020B722 /* GoogleService-Info.plist */,
 			);
 			name = LocationTracker;
+			sourceTree = "<group>";
+		};
+		5A8E7B402F10100100112233 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B442F10100100112233 /* API */,
+				5A8E7B452F10100100112233 /* Presentation */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5A8E7B442F10100100112233 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B302F10100100112233 /* APIError.swift */,
+				5A8E7B312F10100100112233 /* APIEndpoint.swift */,
+				5A8E7B322F10100100112233 /* APIClient.swift */,
+				5A8E7B332F10100100112233 /* AppEnvironment.swift */,
+				5A8E7B532F10100100112233 /* EmptyResponse.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		5A8E7B452F10100100112233 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B342F10100100112233 /* TopViewControllerProvider.swift */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		5A8E7B412F10100100112233 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B352F10100100112233 /* AppColors.swift */,
+				5A8E7B362F10100100112233 /* AppSpacing.swift */,
+				5A8E7B372F10100100112233 /* AppTypography.swift */,
+				5A8E7B382F10100100112233 /* PrimaryButtonStyle.swift */,
+			);
+			name = DesignSystem;
+			sourceTree = "<group>";
+		};
+		5A8E7B422F10100100112233 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B462F10100100112233 /* NativeGoogle */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		5A8E7B462F10100100112233 /* NativeGoogle */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B472F10100100112233 /* Models */,
+				5A8E7B482F10100100112233 /* Services */,
+				5A8E7B492F10100100112233 /* ViewModels */,
+				5A8E7B4A2F10100100112233 /* Views */,
+				5A8E7B4B2F10100100112233 /* Coordinator */,
+			);
+			name = NativeGoogle;
+			sourceTree = "<group>";
+		};
+		5A8E7B472F10100100112233 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B392F10100100112233 /* NativeGoogleProfile.swift */,
+				5A8E7B542F10100100112233 /* PlaceholderPost.swift */,
+				5A8E7B552F10100100112233 /* PlaceholderPostRequest.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5A8E7B482F10100100112233 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B3A2F10100100112233 /* NativeGoogleEndpoint.swift */,
+				5A8E7B3B2F10100100112233 /* NativeGoogleService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		5A8E7B492F10100100112233 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B3C2F10100100112233 /* NativeGoogleViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		5A8E7B4A2F10100100112233 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B3D2F10100100112233 /* NativeGoogleView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5A8E7B4B2F10100100112233 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B3E2F10100100112233 /* NativeGoogleCoordinator.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		5A8E7B432F10100100112233 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E7B3F2F10100100112233 /* NativeGoogleScreen.swift */,
+			);
+			name = Bridge;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -268,6 +421,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A8E7B012F10100100112233 /* BackgroundLocationBridge.m in Sources */,
+				5A8E7B102F10100100112233 /* APIError.swift in Sources */,
+				5A8E7B112F10100100112233 /* APIEndpoint.swift in Sources */,
+				5A8E7B122F10100100112233 /* APIClient.swift in Sources */,
+				5A8E7B132F10100100112233 /* AppEnvironment.swift in Sources */,
+				5A8E7B502F10100100112233 /* EmptyResponse.swift in Sources */,
+				5A8E7B142F10100100112233 /* TopViewControllerProvider.swift in Sources */,
+				5A8E7B152F10100100112233 /* AppColors.swift in Sources */,
+				5A8E7B162F10100100112233 /* AppSpacing.swift in Sources */,
+				5A8E7B172F10100100112233 /* AppTypography.swift in Sources */,
+				5A8E7B182F10100100112233 /* PrimaryButtonStyle.swift in Sources */,
+				5A8E7B192F10100100112233 /* NativeGoogleProfile.swift in Sources */,
+				5A8E7B512F10100100112233 /* PlaceholderPost.swift in Sources */,
+				5A8E7B522F10100100112233 /* PlaceholderPostRequest.swift in Sources */,
+				5A8E7B1A2F10100100112233 /* NativeGoogleEndpoint.swift in Sources */,
+				5A8E7B1B2F10100100112233 /* NativeGoogleService.swift in Sources */,
+				5A8E7B1C2F10100100112233 /* NativeGoogleViewModel.swift in Sources */,
+				5A8E7B1D2F10100100112233 /* NativeGoogleView.swift in Sources */,
+				5A8E7B1E2F10100100112233 /* NativeGoogleCoordinator.swift in Sources */,
+				5A8E7B1F2F10100100112233 /* NativeGoogleScreen.swift in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

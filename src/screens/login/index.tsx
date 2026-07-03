@@ -1,16 +1,11 @@
-import { ActivityIndicator, Alert, Pressable, Text, View } from 'react-native';
-import React, { useState } from 'react';
+import { Alert, NativeModules, Platform, Pressable, Text, View } from 'react-native';
+import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { styles } from './styles';
 import GlobalHeader from '../../components/enzymes/header';
-import {
-  getAuthErrorMessage,
-  isGoogleSignInCancelled,
-  isGoogleSignInInProgress,
-  signInWithGoogle,
-} from '../../services/auth';
 
 const Login: React.FC = () => {
-  const [loading, setLoading] = useState(false);
+  const navigation = useNavigation<any>();
 
   const headerData = {
     name: 'SpiderX',
@@ -19,24 +14,18 @@ const Login: React.FC = () => {
   };
 
   const handleGoogleLogin = async () => {
-    if (loading) {
+    if (!NativeModules.NativeGoogleScreen?.open) {
+      Alert.alert(
+        'Native screen unavailable',
+        `Rebuild the ${Platform.OS} app so the native Google screen module is included.`,
+      );
       return;
     }
 
     try {
-      setLoading(true);
-      const user = await signInWithGoogle();
-
-      if (user) {
-        Alert.alert('Signed in', `Welcome ${user.displayName ?? user.email}`);
-      }
+      await NativeModules.NativeGoogleScreen.open();
     } catch (error) {
-      if (!isGoogleSignInInProgress(error) && !isGoogleSignInCancelled(error)) {
-        console.warn('Google sign-in failed', error);
-        Alert.alert('Google sign-in failed', getAuthErrorMessage(error));
-      }
-    } finally {
-      setLoading(false);
+      Alert.alert('Native screen failed', String(error));
     }
   };
 
@@ -48,24 +37,16 @@ const Login: React.FC = () => {
         <Text style={styles.subtitle}>Use your Google account to continue.</Text>
         <Pressable
           accessibilityRole="button"
-          disabled={loading}
           onPress={() => {
             void handleGoogleLogin();
           }}
           style={({ pressed }) => [
             styles.googleButton,
             pressed && styles.googleButtonPressed,
-            loading && styles.googleButtonDisabled,
           ]}
         >
-          {loading ? (
-            <ActivityIndicator color="#252525" />
-          ) : (
-            <>
-              <Text style={styles.googleIcon}>G</Text>
-              <Text style={styles.googleButtonText}>Continue with Google</Text>
-            </>
-          )}
+          <Text style={styles.googleIcon}>G</Text>
+          <Text style={styles.googleButtonText}>Continue with Google</Text>
         </Pressable>
       </View>
     </View>
