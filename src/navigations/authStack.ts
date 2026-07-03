@@ -1,6 +1,6 @@
 import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Login } from '../screens';
+import { DummyGoogleScreen, Login } from '../screens';
 
 const RootStack = createNativeStackNavigator({
 initialRouteName: 'Login',
@@ -8,7 +8,7 @@ initialRouteName: 'Login',
   },
   screens: {
     Login: Login ,
+    DummyGoogle: DummyGoogleScreen,
   },
 });
 export const Navigation = createStaticNavigation(RootStack);
-

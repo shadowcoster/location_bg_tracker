@@ -15,3 +15,10 @@ RCT_EXTERN_METHOD(isTracking:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 
 @end
+
+@interface RCT_EXTERN_MODULE(NativeGoogleScreen, NSObject)
+
+RCT_EXTERN_METHOD(open:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+
+@end

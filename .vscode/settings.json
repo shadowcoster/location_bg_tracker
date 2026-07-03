@@ -6,5 +6,6 @@
     "typescript": false,
     "javascriptreact": false,
     "typescriptreact": false
-  }
+  },
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
